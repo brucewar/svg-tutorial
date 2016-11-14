@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+        <linearGradient id="linearGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ffaaaa" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#994444" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#aaaaff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#444499" stop-opacity="1"/>
+        </linearGradient>
+
+        <linearGradient id="linearGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#aaaaff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#222266" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient4" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff00ff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#660066" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient5" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#44ff44" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="linearGradient6" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ff3333" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#760000" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+
+    <svg y="15">
+        <line x1="10" y1="10" x2="10" y2="100" style="stroke: #000000; stroke-width:2;"/>
+        <line x1="10" y1="100" x2="100" y2="100" style="stroke: #000000; stroke-width:2;"/>
+        <path d="                  M10,50                  l10,10                  l10,25                  l10,5                  l10,-20                  l10,-30                  l10,5                  l10,15                  l10,-10         " style="stroke: url(#linearGradient1); stroke-width:2; fill:none;"/>
+        <text x="30" y="130" style="stroke:#000000; fill: #000000; font-family:Arial; font-size: 14px;">Graphs</text>
+    </svg>
+
+    <svg x="150" y="15">
+        <line x1="10" y1="10" x2="10" y2="100" style="stroke: #000000; stroke-width:2;"/>
+        <line x1="10" y1="100" x2="100" y2="100" style="stroke: #000000; stroke-width:2;"/>
+
+        <rect x="20" y="10" width="10" height="89" style="fill:url(#linearGradient2)"/>
+        <rect x="40" y="50" width="10" height="49" style="fill:url(#linearGradient2)"/>
+        <rect x="60" y="80" width="10" height="19" style="fill:url(#linearGradient2)"/>
+        <rect x="80" y="70" width="10" height="29" style="fill:url(#linearGradient2)"/>
+
+        <text x="30" y="130" style="stroke:#000000; fill: #000000; font-family:Arial; font-size: 14px;">Bar Charts</text>
+    </svg>
+
+    <svg x="300" y="15">
+        <path d="M55,55                  l-50,0                  a50,50 0 0,1  50,-50                  z                " style="stroke:#000000; fill: url(#linearGradient3);"/>
+
+        <path d="M55,55                  l0,-50                  a50,50 0 0,1  50,50                  z                " style="stroke:#000000; fill: url(#linearGradient4)"/>
+
+        <path d="M55,55                  l50,0                  a50,50 0 0,1  -50,50                  z                " style="stroke:#000000; fill: url(#linearGradient5)"/>
+
+        <path d="M55,55                  l0,50                  a50,50 0 0,1  -50,-50                  z                " style="stroke:#000000; fill: url(#linearGradient6)"/>
+
+        <text x="25" y="130" style="stroke:#000000; fill: #000000; font-family:Arial; font-size: 14px;">Pie Charts</text>
+    </svg>
+
+    <svg>
+        <text x="25" y="160" style="stroke:#000000; fill: #000000; font-family:Arial; font-size: 14px;">
+            <tspan x="0" dy="20">Or...</tspan>
+            <tspan x="0" dy="40">- Sequence Diagrams</tspan>
+            <tspan x="0" dy="20">- Class Diagrams</tspan>
+            <tspan x="0" dy="20">- Architecture Layers</tspan>
+            <tspan x="0" dy="20">- Flow Charts</tspan>
+            <tspan x="0" dy="20">- Use Case Diagrams</tspan>
+
+            <tspan x="0" dy="40">- Gantt Charts</tspan>
+            <tspan x="0" dy="20">- PERT Charts</tspan>
+            <tspan x="0" dy="20">- Progress Bars</tspan>
+            <tspan x="0" dy="20">- Speedometers</tspan>
+
+            <tspan x="0" dy="40">- Interactive Web Graphics (links + on mouse over / out anims etc.)</tspan>
+            <tspan x="0" dy="40">- etc.</tspan>
+
+        </text>
+    </svg>
+
+</svg>
