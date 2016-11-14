@@ -1,0 +1,10 @@
+{
+	"plugins": [],
+	"links": {
+		"sidebar": {
+			"Donate": "http://brucewar.me/donate/",
+			"View on GitHub": "https://github.com/brucewar/svg-tutorial"
+		}
+	},
+	"pluginConfig": {}
+}
