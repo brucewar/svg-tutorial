@@ -6,3 +6,8 @@
 * [4.在Web浏览器中显示SVG](4.在Web浏览器中显示SVG.md)
 * [5.SVG图标](5.SVG图标.md)
 * [6.SVG坐标系](6.SVG坐标系.md)
+* [7.SVG svg元素](7.SVG-svg元素.md)
+* [8.SVG g元素](8.SVG-g元素.md)
+* [9.SVG rect元素](9.SVG-rect元素.md)
+* [10.SVG circle元素](10.SVG-circle元素.md)
+* [11.SVG ellipse元素](11.SVG-ellipse.md)
