@@ -16,3 +16,4 @@
 * [14.SVG polygon元素](14.SVG-polygon元素.md)
 * [15.SVG path元素](15.SVG-path元素.md)
 * [16.SVG marker元素](16.SVG-marker元素.md)
+* [17.SVG text元素](17.SVG-text元素.md)
