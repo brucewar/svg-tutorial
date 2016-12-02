@@ -6,7 +6,7 @@
 			<use xlink:href="#myTextPath" style="fill:none; stroke:white;"/>
 
 			<text x="20" y="25" style="stroke: #333333; font-family: Arial; font-size: 20">Text</text>
-			<a xlink:href="/svg/text-element.html" target="_top">
+			<a xlink:href="/17.SVG-text元素.html" target="_top">
 					<text x="20" y="90" style="stroke: #333333">Text</text>
 			</a>
 

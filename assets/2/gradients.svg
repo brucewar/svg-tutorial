@@ -72,15 +72,15 @@
 	<text x="195" y="260" style="stroke:url(#myLinearGradient5); fill: url(#myLinearGradient5); font-family:Arial; font-size: 24px;">Text with opacity gradient</text>
 
 
-	<a xlink:href="/svg/svg-gradients.html" target="_top">
+	<a xlink:href="/34.SVG渐变.html" target="_top">
 		<text x="20" y="190" style="stroke: #000000; font-family: Arial; font-size: 15px;">Linear Gradients</text>
 	</a>
 
-	<a xlink:href="/svg/svg-gradients.html" target="_top">
+	<a xlink:href="/34.SVG渐变.html" target="_top">
 			<text x="200" y="190" style="stroke: #000000; font-family: Arial; font-size: 15px;">Radial Gradients</text>
 	</a>
 
-	<a xlink:href="/svg/svg-gradients.html" target="_top">
+	<a xlink:href="/34.SVG渐变.html" target="_top">
 			<text x="20" y="320" style="stroke: #000000; font-family: Arial; font-size: 15px;">Opacity Gradients</text>
 	</a>
 
