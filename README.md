@@ -8,6 +8,6 @@
 * 未来翻译技术类文档的一个好的开端
 * 静下心来做一件事
 
-这次是出于本人兴趣义无翻译，教程中可能存在错误，也肯定有语言表述方面的一些问题，欢迎指正。
+这次是出于本人兴趣义务翻译，教程中可能存在错误，也肯定有语言表述方面的一些问题，欢迎指正。
 
 > 教程原文地址：[http://tutorials.jenkov.com/svg/](http://tutorials.jenkov.com/svg/)	作者：[Jakob Jenkov](https://plus.google.com/+JakobJenkov?rel=author)
