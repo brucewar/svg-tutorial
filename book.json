@@ -1,13 +1,38 @@
 {
-	"title": "SVG中文教程",
+	"title": "SVG教程（中文翻译版）",
 	"author": "brucewar <wjl891014@gmail.com>",
-	"description": "SVG英文教程中文翻译版",
-	"plugins": [],
+	"description": "SVG教程中文翻译版",
+	"language": "zh-hans",
 	"links": {
 		"sidebar": {
-			"Donate": "http://brucewar.me/donate/",
+			"博客": "http://brucewar.me",
+			"打赏": "http://brucewar.me/donate/",
 			"View on GitHub": "https://github.com/brucewar/svg-tutorial"
 		}
 	},
-	"pluginConfig": {}
+	"plugins": [
+		"duoshuo",
+		"github",
+		"ga",
+		"baidu",
+		"sitemap@1.0.2"
+	],
+	"pluginConfig": {
+		"duoshuo": {
+			"short_name": "brucewar",
+			"theme": "default"
+		},
+		"github": {
+			"url": "https://github.com/brucewar"
+		},
+		"ga": {
+			"token": "UA-87259783-2"
+		},
+		"baidu": {
+			"token": "80f89a3fe34a9f8e22c53f85908e2d6"
+		},
+		"sitemap": {
+			"hostname": "https://svg.brucewar.me"
+		}
+	}
 }
