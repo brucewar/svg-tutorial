@@ -8,5 +8,25 @@
 			"打赏": "http://brucewar.me/donate/",
 			"View on GitHub": "https://github.com/brucewar/svg-tutorial"
 		}
+	},
+	"plugins": [
+		"github",
+		"ga",
+		"baidu",
+		"sitemap@1.0.2"
+	],
+	"pluginConfig": {
+		"github": {
+			"url": "https://github.com/brucewar"
+		},
+		"ga": {
+			"token": "UA-87259783-2"
+		},
+		"baidu": {
+			"token": "80f89a3fe34a9f8e22c53f85908e2d6"
+		},
+		"sitemap": {
+			"hostname": "https://svg.brucewar.me"
+		}
 	}
 }
