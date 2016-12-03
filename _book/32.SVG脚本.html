@@ -1,0 +1,970 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>32.SVG脚本 · SVG教程（中文翻译版）</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="brucewar <wjl891014@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="33.SVG变换.html" />
+    
+    
+    <link rel="prev" href="31.SVG动画.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://brucewar.me" target="_blank" class="custom-link">博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://brucewar.me/donate/" target="_blank" class="custom-link">打赏</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://github.com/brucewar/svg-tutorial" target="_blank" class="custom-link">View on GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.SVG教程.html">
+            
+                <a href="1.SVG教程.html">
+            
+                    
+                    1.SVG教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.SVG示例.html">
+            
+                <a href="2.SVG示例.html">
+            
+                    
+                    2.SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.一个简单的SVG示例.html">
+            
+                <a href="3.一个简单的SVG示例.html">
+            
+                    
+                    3.一个简单的SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.在Web浏览器中显示SVG.html">
+            
+                <a href="4.在Web浏览器中显示SVG.html">
+            
+                    
+                    4.在Web浏览器中显示SVG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.SVG图标.html">
+            
+                <a href="5.SVG图标.html">
+            
+                    
+                    5.SVG图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.SVG坐标系.html">
+            
+                <a href="6.SVG坐标系.html">
+            
+                    
+                    6.SVG坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.SVG-svg元素.html">
+            
+                <a href="7.SVG-svg元素.html">
+            
+                    
+                    7.SVG svg元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8.SVG-g元素.html">
+            
+                <a href="8.SVG-g元素.html">
+            
+                    
+                    8.SVG g元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9.SVG-rect元素.html">
+            
+                <a href="9.SVG-rect元素.html">
+            
+                    
+                    9.SVG rect元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.SVG-circle元素.html">
+            
+                <a href="10.SVG-circle元素.html">
+            
+                    
+                    10.SVG circle元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.SVG-ellipse元素.html">
+            
+                <a href="11.SVG-ellipse元素.html">
+            
+                    
+                    11.SVG ellipse元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12.SVG-line元素.html">
+            
+                <a href="12.SVG-line元素.html">
+            
+                    
+                    12.SVG line元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.SVG-polyline元素.html">
+            
+                <a href="13.SVG-polyline元素.html">
+            
+                    
+                    13.SVG polyline元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.SVG-polygon元素.html">
+            
+                <a href="14.SVG-polygon元素.html">
+            
+                    
+                    14.SVG polygon元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.SVG-path元素.html">
+            
+                <a href="15.SVG-path元素.html">
+            
+                    
+                    15.SVG path元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16.SVG-marker元素.html">
+            
+                <a href="16.SVG-marker元素.html">
+            
+                    
+                    16.SVG marker元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17.SVG-text元素.html">
+            
+                <a href="17.SVG-text元素.html">
+            
+                    
+                    17.SVG text元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18.SVG-tspan元素.html">
+            
+                <a href="18.SVG-tspan元素.html">
+            
+                    
+                    18.SVG tspan元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="19.SVG-tref元素.html">
+            
+                <a href="19.SVG-tref元素.html">
+            
+                    
+                    19.SVG tref元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="20.SVG-textpath元素.html">
+            
+                <a href="20.SVG-textpath元素.html">
+            
+                    
+                    20.SVG textpath元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="21.SVG-switch元素.html">
+            
+                <a href="21.SVG-switch元素.html">
+            
+                    
+                    21.SVG switch元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="22.SVG-image元素.html">
+            
+                <a href="22.SVG-image元素.html">
+            
+                    
+                    22.SVG image元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="23.SVG-a元素.html">
+            
+                <a href="23.SVG-a元素.html">
+            
+                    
+                    23.SVG a元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="24.SVG-defs元素.html">
+            
+                <a href="24.SVG-defs元素.html">
+            
+                    
+                    24.SVG defs元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="25.SVG-symbol元素.html">
+            
+                <a href="25.SVG-symbol元素.html">
+            
+                    
+                    25.SVG symbol元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="26.SVG-use元素.html">
+            
+                <a href="26.SVG-use元素.html">
+            
+                    
+                    26.SVG use元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="27.SVG和CSS-级联样式表.html">
+            
+                <a href="27.SVG和CSS-级联样式表.html">
+            
+                    
+                    27.SVG和CSS-级联样式表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="28.SVG轮廓.html">
+            
+                <a href="28.SVG轮廓.html">
+            
+                    
+                    28.SVG轮廓
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="29.SVG填充.html">
+            
+                <a href="29.SVG填充.html">
+            
+                    
+                    29.SVG填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="30.SVG视口和视图框.html">
+            
+                <a href="30.SVG视口和视图框.html">
+            
+                    
+                    30.SVG视口和视图框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="31.SVG动画.html">
+            
+                <a href="31.SVG动画.html">
+            
+                    
+                    31.SVG动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.33" data-path="32.SVG脚本.html">
+            
+                <a href="32.SVG脚本.html">
+            
+                    
+                    32.SVG脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="33.SVG变换.html">
+            
+                <a href="33.SVG变换.html">
+            
+                    
+                    33.SVG变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="34.SVG渐变.html">
+            
+                <a href="34.SVG渐变.html">
+            
+                    
+                    34.SVG渐变
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="35.SVG填充图案.html">
+            
+                <a href="35.SVG填充图案.html">
+            
+                    
+                    35.SVG填充图案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="36.SVG剪裁路径.html">
+            
+                <a href="36.SVG剪裁路径.html">
+            
+                    
+                    36.SVG剪裁路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="37.SVG遮罩.html">
+            
+                <a href="37.SVG遮罩.html">
+            
+                    
+                    37.SVG遮罩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="38.SVG滤镜.html">
+            
+                <a href="38.SVG滤镜.html">
+            
+                    
+                    38.SVG滤镜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >32.SVG脚本</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="svg&#x811A;&#x672C;">SVG&#x811A;&#x672C;</h1>
+<hr>
+<blockquote>
+<ul>
+<li><a href="#svg&#x811A;&#x672C;&#x793A;&#x4F8B;">SVG&#x811A;&#x672C;&#x793A;&#x4F8B;</a></li>
+<li><a href="#&#x901A;&#x8FC7;id&#x5F15;&#x7528;svg&#x5143;&#x7D20;">&#x901A;&#x8FC7;ID&#x5F15;&#x7528;SVG&#x5143;&#x7D20;</a></li>
+<li><a href="#&#x6539;&#x53D8;&#x5C5E;&#x6027;&#x503C;">&#x6539;&#x53D8;&#x5C5E;&#x6027;&#x503C;</a></li>
+<li><a href="#&#x6539;&#x53D8;css&#x5C5E;&#x6027;">&#x6539;&#x53D8;CSS&#x5C5E;&#x6027;</a></li>
+<li><a href="#&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;">&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;</a></li>
+<li><a href="#&#x4E3A;svg&#x5F62;&#x72B6;&#x6DFB;&#x52A0;&#x52A8;&#x753B;">&#x4E3A;SVG&#x5F62;&#x72B6;&#x6DFB;&#x52A0;&#x52A8;&#x753B;</a></li>
+</ul>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;JavaScript&#x4E3A;SVG&#x6DFB;&#x52A0;&#x811A;&#x672C;&#xFF0C;&#x901A;&#x8FC7;&#x811A;&#x672C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;SVG&#x5143;&#x7D20;&#xFF0C;&#x4E3A;&#x5B83;&#x4EEC;&#x6DFB;&#x52A0;&#x52A8;&#x753B;&#xFF0C;&#x6216;&#x8005;&#x76D1;&#x542C;&#x5F62;&#x72B6;&#x7684;&#x9F20;&#x6807;&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x5F53;SVG&#x5D4C;&#x5957;&#x5728;HTML&#x9875;&#x9762;&#x4E2D;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;JavaScript&#x64CD;&#x4F5C;SVG&#x5143;&#x7D20;&#xFF0C;&#x548C;&#x64CD;&#x4F5C;HTML&#x5143;&#x7D20;&#x4E00;&#x6837;&#x3002;JavaScript&#x811A;&#x672C;&#x770B;&#x8D77;&#x6765;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x901A;&#x8FC7;JavaScript&#x5904;&#x7406;SVG&#x5143;&#x7D20;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x89E3;&#x91CA;JavaScript&#x3002;&#x8981;&#x7406;&#x89E3;&#x672C;&#x6587;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5BF9;JavaScript&#x5DF2;&#x7ECF;&#x6709;&#x5408;&#x7406;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+<h2 id="svg&#x811A;&#x672C;&#x793A;&#x4F8B;">SVG&#x811A;&#x672C;&#x793A;&#x4F8B;</h2>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;SVG&#x811A;&#x672C;&#x793A;&#x4F8B;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x5355;&#x51FB;&#x6309;&#x94AE;&#x65F6;&#x66F4;&#x6539;SVG&#x77E9;&#x5F62;&#x7684;&#x5C3A;&#x5BF8;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;100&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rect1&quot;</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;80&quot;</span>
+          <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke:#000000; fill:none;&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;button1&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Change Dimensions&quot;</span>
+            <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;changeDimensions()&quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeDimensions</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect1&quot;</span>).setAttribute(<span class="hljs-string">&quot;width&quot;</span>, <span class="hljs-string">&quot;100&quot;</span>);
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<svg width="500" height="100">
+    <rect id="rect1" x="10" y="10" width="100" height="80" style="stroke:#000000; fill:none;"/>
+</svg>
+<input id="button1" type="button" value="Change Dimensions" onclick="changeDimensions()">
+<script>
+    function changeDimensions() {
+        document.getElementById("rect1").setAttribute("width", "100");
+    }
+</script>
+
+&#x5C1D;&#x8BD5;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#xFF0C;&#x770B;&#x770B;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x3002;
+
+## &#x901A;&#x8FC7;ID&#x5F15;&#x7528;SVG&#x5143;&#x7D20;
+
+&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;`document.getElementById()`&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x5BF9;SVG&#x5F62;&#x72B6;&#x7684;&#x5F15;&#x7528;&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;
+
+```js
+var svgElement = document.getElementById(&quot;rect1&quot;);
+```
+
+&#x6B64;&#x4F8B;&#x83B7;&#x53D6;&#x5BF9;ID&#x4E3A;`rect1`&#xFF08;&#x5728;SVG&#x5143;&#x7D20;&#x7684;`id`&#x5C5E;&#x6027;&#x4E2D;&#x6307;&#x5B9A;&#x7684;ID&#xFF09;&#x7684;SVG&#x5143;&#x7D20;&#x7684;&#x5F15;&#x7528;&#x3002;
+
+## &#x6539;&#x53D8;&#x5C5E;&#x6027;&#x503C;
+
+&#x4E00;&#x65E6;&#x83B7;&#x5F97;&#x5BF9;SVG&#x5143;&#x7D20;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;`setAttribute()`&#x51FD;&#x6570;&#x66F4;&#x6539;&#x5176;&#x5C5E;&#x6027;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;
+
+```js
+var svgElement = document.getElementById(&quot;rect1&quot;);
+
+svgElement.setAttribute(&quot;width&quot;, &quot;100&quot;);
+```
+
+&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x8BBE;&#x7F6E;&#x6240;&#x9009;&#x7684;SVG&#x5143;&#x7D20;&#x7684;`width`&#x5C5E;&#x6027;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;`setAttribute()`&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#xFF0C;&#x5305;&#x62EC;`style`&#x5C5E;&#x6027;&#x3002;
+
+&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;`getAttribute()`&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;
+
+```js
+var svgElement = document.getElementById(&quot;rect1&quot;);
+
+var width = svgElement.getAttribute(&quot;width&quot;);
+```
+
+## &#x6539;&#x53D8;CSS&#x5C5E;&#x6027;
+
+&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5143;&#x7D20;&#x7684;`style`&#x5C5E;&#x6027;&#x5F15;&#x7528;&#x7ED9;&#x5B9A;&#x7684;CSS&#x5C5E;&#x6027;&#x6765;&#x66F4;&#x6539;SVG&#x5143;&#x7D20;&#x7684;CSS&#x5C5E;&#x6027;&#x3002;&#x4E0B;&#x9762;&#x4F8B;&#x5B50;&#x8BBE;&#x7F6E;&#x4E86;&#x7684;CSS&#x5C5E;&#x6027;`stroke`&#xFF1A;
+
+```js
+var svgElement = document.getElementById(&quot;rect1&quot;);
+
+svgElement.style.stroke = &quot;#ff0000&quot;;
+```
+
+&#x901A;&#x8FC7;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4EFB;&#x4F55;&#x5176;&#x5B83;CSS&#x5C5E;&#x6027;&#x3002;&#x53EA;&#x9700;&#x5C06;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x653E;&#x5728;`svgElement.style`&#x4E4B;&#x540E;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;&#x67D0;&#x4E2A;&#x503C;&#x3002;
+
+&#x901A;&#x8FC7;`style`&#x5C5E;&#x6027;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;CSS&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;
+
+```js
+var svgElement = document.getElementById(&quot;rect1&quot;);
+
+var stroke = svgElement.style.stroke;
+```
+
+&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x8BFB;&#x53D6;&#x4E86;CSS&#x5C5E;&#x6027;`stroke`&#x7684;&#x503C;&#x3002;
+
+&#x5F15;&#x7528;&#x540D;&#x79F0;&#x5185;&#x5305;&#x542B;&#x77ED;&#x5212;&#x7EBF;&#x7684;CSS&#x5C5E;&#x6027;&#xFF08;&#x5982;`stroke-width`&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;`[&apos;&apos;]`&#x6784;&#x9020;&#x5F15;&#x7528;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x662F;&#x56E0;&#x4E3A;&#x5E26;&#x6709;&#x77ED;&#x5212;&#x7EBF;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x5728;JavaScript&#x4E2D;&#x662F;&#x65E0;&#x6548;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x4E0D;&#x80FD;&#x8FD9;&#x4E48;&#x5199;&#xFF1A;
+
+```js
+element.style.stroke-width
+```
+
+&#x4F46;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#xFF1A;
+
+```js
+element.style[&apos;stroke-width&apos;]
+```
+
+&#x8FD9;&#x6837;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x540D;&#x5B57;&#x4E2D;&#x6709;&#x77ED;&#x5212;&#x7EBF;&#x7684;CSS&#x5C5E;&#x6027;&#x4E86;&#x3002;
+
+## &#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;
+
+&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;SVG&#x4E2D;&#x5C06;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x6DFB;&#x52A0;&#x5230;SVG&#x5F62;&#x72B6;&#x4E0A;&#xFF0C;&#x5982;&#x540C;&#x5728;HTML&#x5143;&#x7D20;&#x4E0A;&#x4E00;&#x6837;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6DFB;&#x52A0;&#x4E86;`onmouseover`&#x548C;`onmouseout`&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF1A;
+
+```xml
+<rect x="10" y="10" width="100" height="75" style="stroke: #000000; fill: #eeeeee;" onmouseover="this.style.stroke = &apos;#ff0000&apos;; this.style[&apos;stroke-width&apos;] = 5;" onmouseout="this.style.stroke = &apos;#000000&apos;; this.style[&apos;stroke-width&apos;] = 1;"></rect>
+```
+
+&#x6B64;&#x793A;&#x4F8B;&#x5728;&#x9F20;&#x6807;&#x60AC;&#x505C;&#x5728;&#x77E9;&#x5F62;&#x4E0A;&#x65B9;&#x65F6;&#xFF0C;&#x66F4;&#x6539;&#x63CF;&#x8FB9;&#x7684;&#x989C;&#x8272;&#x548C;&#x5BBD;&#x5EA6;&#xFF0C;&#x5E76;&#x5728;&#x9F20;&#x6807;&#x79BB;&#x5F00;&#x77E9;&#x5F62;&#x65F6;&#xFF0C;&#x91CD;&#x7F6E;&#x63CF;&#x8FB9;&#x989C;&#x8272;&#x548C;&#x5BBD;&#x5EA6;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x5C1D;&#x8BD5;&#x5C06;&#x9F20;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x5F62;&#x72B6;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x79FB;&#x51FA;&#xFF0C;&#x4EE5;&#x67E5;&#x770B;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x7684;&#x6548;&#x679C;&#x3002;
+
+<svg width="500" height="100">
+    <rect x="10" y="10" width="100" height="75" style="stroke: rgb(0, 0, 0); fill: rgb(238, 238, 238); stroke-width: 1;" onmouseover="this.style.stroke = &apos;#ff0000&apos;; this.style[&apos;stroke-width&apos;] = 5;" onmouseout="this.style.stroke = &apos;#000000&apos;; this.style[&apos;stroke-width&apos;] = 1;"/>
+
+</svg>
+
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>addEventListener()</code>&#x51FD;&#x6570;&#x4E3A;SVG&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> svgElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;rect1&quot;</span>);
+svgElement.addEventListener(<span class="hljs-string">&quot;mouseover&quot;</span>, mouseOver);
+
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mouseOver</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&quot;event fired!&quot;</span>);
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E3A;<code>mouseover</code>&#x4E8B;&#x4EF6;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>mouseOver</code>&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x65E0;&#x8BBA;&#x7528;&#x6237;&#x4F55;&#x65F6;&#x5C06;&#x9F20;&#x6807;&#x60AC;&#x505C;&#x5728;SVG&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="&#x4E3A;svg&#x5F62;&#x72B6;&#x6DFB;&#x52A0;&#x52A8;&#x753B;">&#x4E3A;SVG&#x5F62;&#x72B6;&#x6DFB;&#x52A0;&#x52A8;&#x753B;</h2>
+<p>&#x4E3A;&#x4E86;&#x7ED9;SVG&#x5F62;&#x72B6;&#x6DFB;&#x52A0;&#x52A8;&#x753B;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x91CD;&#x590D;&#x8C03;&#x7528;&#x4E00;&#x4E2A;JavaScript&#x51FD;&#x6570;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x6539;&#x53D8;&#x5F62;&#x72B6;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5C3A;&#x5BF8;&#x3002;&#x5F53;&#x51FD;&#x6570;&#x88AB;&#x91CD;&#x590D;&#x8C03;&#x7528;&#x5E76;&#x4E14;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x975E;&#x5E38;&#x77ED;&#xFF0C;&#x5F62;&#x72B6;&#x5C06;&#x4EE5;&#x975E;&#x5E38;&#x77ED;&#x7684;&#x95F4;&#x9694;&#x66F4;&#x65B0;&#x5176;&#x4F4D;&#x7F6E;&#x548C;&#x5C3A;&#x5BF8;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x5F62;&#x72B6;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x52A8;&#x753B;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;SVG&#x811A;&#x672C;&#x52A8;&#x753B;&#x793A;&#x4F8B;&#xFF0C;&#x521B;&#x5EFA;&#x5B83;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;&#x5355;&#x51FB;SVG&#x56FE;&#x50CF;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x6309;&#x94AE;&#x53EF;&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;&#x52A8;&#x753B;&#x3002;</p>
+<svg width="500" height="100">
+    <circle id="circle1" cx="464" cy="20" r="10" style="stroke: none; fill: #ff0000;"/>
+</svg>
+<script>
+    var timerFunction = null;
+
+    function startAnimation() {
+        if(timerFunction == null) {
+            timerFunction = setInterval(animate, 20);
+        }
+    }
+
+    function stopAnimation() {
+        if(timerFunction != null){
+            clearInterval(timerFunction);
+            timerFunction = null;
+        }
+    }
+
+    function animate() {
+        var circle = document.getElementById("circle1");
+        var x = circle.getAttribute("cx");
+        var newX = 2 + parseInt(x);
+        if(newX > 500) {
+            newX = 20;
+        }
+        circle.setAttribute("cx", newX);
+    }
+</script>
+<br>
+<input type="button" value="Start Animation" onclick="startAnimation();">
+<input type="button" value="Stop Animation" onclick="stopAnimation();">
+<br>
+
+&#x8FD9;&#x91CC;&#x662F;&#x751F;&#x6210;&#x4E0A;&#x9762;&#x52A8;&#x753B;&#x6240;&#x9700;&#x7684;&#x4EE3;&#x7801;&#xFF1A;
+
+```html
+<svg width="500" height="100">
+    <circle id="circle1" cx="20" cy="20" r="10" style="stroke: none; fill: #ff0000;"/>
+</svg>
+
+<p><script>
+    var timerFunction = null;</p>
+<pre><code>function startAnimation() {
+    if(timerFunction == null) {
+        timerFunction = setInterval(animate, 20);
+    }
+}
+
+function stopAnimation() {
+    if(timerFunction != null){
+        clearInterval(timerFunction);
+        timerFunction = null;
+    }
+}
+
+function animate() {
+    var circle = document.getElementById(&quot;circle1&quot;);
+    var x = circle.getAttribute(&quot;cx&quot;);
+    var newX = 2 + parseInt(x);
+    if(newX &gt; 500) {
+        newX = 20;
+    }
+    circle.setAttribute(&quot;cx&quot;, newX);
+}
+</code></pre><p>&lt;/script&gt;
+<br></p>
+<p><input type="button" value="Start Animation" onclick="startAnimation();"></p>
+<p><input type="button" value="Stop Animation" onclick="stopAnimation();">
+```</p>
+<p>两个HTML按钮都有一个<code>onclick</code>监听器。这些监听器调用开始和停止动画的<code>startAnimation()</code>和<code>stopAnimation()</code>函数。通过设置一个每20毫秒调用<code>animate()</code>函数的定时器来启动动画。再通过清除定时器来停止动画。</p>
+<p>动画在<code>animate()</code>函数内部执行。首先，通过<code>document.getElementById()</code>函数获取对SVG图像中<code>&lt;circle&gt;</code>元素的引用。然后读取院的<code>cx</code>属性，并将其转换为数值。然后将<code>cx</code>加2。如果新的x值大于500，就将其重置为20。最后，将<code>&lt;circle&gt;</code>元素的<code>cx</code>属性设置为新的x值。该圆因此被移动到新的x位置。</p>
+</script></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="31.SVG动画.html" class="navigation navigation-prev " aria-label="Previous page: 31.SVG动画">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="33.SVG变换.html" class="navigation navigation-next " aria-label="Next page: 33.SVG变换">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"32.SVG脚本","level":"1.33","depth":1,"next":{"title":"33.SVG变换","level":"1.34","depth":1,"path":"33.SVG变换.md","ref":"33.SVG变换.md","articles":[]},"previous":{"title":"31.SVG动画","level":"1.32","depth":1,"path":"31.SVG动画.md","ref":"31.SVG动画.md","articles":[]},"dir":"ltr"},"config":{"plugins":["duoshuo","github","ga","baidu","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/brucewar"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"brucewar","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-87259783-2"},"baidu":{"token":"80f89a3fe34a9f8e22c53f85908e2d6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"brucewar <wjl891014@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SVG教程（中文翻译版）","links":{"sidebar":{"博客":"http://brucewar.me","打赏":"http://brucewar.me/donate/","View on GitHub":"https://github.com/brucewar/svg-tutorial"}},"gitbook":"*","description":"SVG教程中文翻译版，也是本人第一次翻译英文教程。"},"file":{"path":"32.SVG脚本.md","mtime":"2016-11-29T06:59:45.283Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-03T13:37:22.555Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-duoshuo/duoshuo.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

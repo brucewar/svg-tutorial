@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg y="15">
+		<line x1="10" y1="10" x2="25" y2="50" style="stroke: #000000; stroke-width:2;"/>
+		<a xlink:href="/12.SVG-line元素.html" target="_top">
+				<text x="0" y="70" style="stroke: #333333">Lines</text>
+		</a>
+		<rect x="55" y="10" width="50" height="40" style="stroke: #000000; stroke-width: 3; fill: #6666ff;"/>
+		<rect x="115" y="10" width="50" height="40" rx="10" ry="10" style="stroke: #000000; stroke-width: 3; fill: #6666ff;"/>
+		<a xlink:href="/9.SVG-rect元素.html" target="_top">
+				<text x="80" y="70" style="stroke: #333333">Rectangles</text>
+		</a>
+		<circle cx="220" cy="30" r="20" style="stroke: #000000; stroke-width: 3; fill: #6666ff;"/>
+		<a xlink:href="/10.SVG-circle元素.html" target="_top">
+				<text x="200" y="70" style="stroke: #333333">Circles</text>
+		</a>
+		<ellipse cx="300" cy="30" rx="20" ry="15" style="stroke: #000000; stroke-width: 3; fill: #6666ff;"/>
+		<a xlink:href="/11.SVG-ellipse元素.html" target="_top">
+				<text x="280" y="70" style="stroke: #333333">Ellipses</text>
+		</a>
+		<svg x="350" y="10">
+		<polygon points="20,5 30,5  40,15  40,25 30,35  20,35  10,25  10,15 " style="stroke:#000000; fill:#6666ff; stroke-width: 3;"/>
+		</svg>
+		<a xlink:href="/14.SVG-polygon元素.html" target="_top">
+				<text x="345" y="70" style="stroke: #333333">Polygons</text>
+		</a>
+		<text x="400" y="70">/</text>
+		<a xlink:href="/13.SVG-polyline元素.html" target="_top">
+				<text x="410" y="70" style="stroke: #333333">Polylines</text>
+		</a>
+	</svg>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+			<path id="myTextPath" d="M275,20                  a1,1 0 0,0 100,0                 "/>
+	</defs>
+	<svg y="15">
+			<use xlink:href="#myTextPath" style="fill:none; stroke:white;"/>
+
+			<text x="20" y="25" style="stroke: #333333; font-family: Arial; font-size: 20">Text</text>
+			<a xlink:href="/17.SVG-text元素.html" target="_top">
+					<text x="20" y="90" style="stroke: #333333">Text</text>
+			</a>
+
+			<text x="100" y="80" style="stroke: #333333; stroke-width: 2; fill: #66ff66; font-family: Arial; font-size: 75px">Text</text>
+
+			<text x="10" y="100" style="stroke: #000000;">
+				<textPath xlink:href="#myTextPath">Text along a curved path...</textPath>
+			</text>
+	</svg>
+</svg>

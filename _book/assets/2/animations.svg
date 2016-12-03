@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <rect x="10" y="10" height="50" width="50" style="stroke:#660000; stroke-width: 3; fill: #ee0000" transform="rotate(263.33 30 30)">
+
+        <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 30 30" to="360 30 30" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="116.294" y="10" rx="5" ry="5" height="50" width="50" style="stroke:#660000; stroke-width: 3; fill: #ee0000">
+
+        <animate id="et" attributeName="x" begin="0s" dur="5s" from="70" to="120" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="200" y="10" rx="5" ry="5" height="50" width="50" style="stroke:#006600; stroke-width: 3; fill: #00ee00">
+
+        <animateColor attributeName="fill" begin="0s" dur="5s" from="#003300" to="#00ff00" repeatCount="indefinite"/>
+    </rect>
+
+
+    <rect x="270" y="10" rx="5" ry="5" height="47.0355" width="50" style="stroke:#006600; stroke-width: 3; fill: #00ff00">
+
+        <animate attributeName="height" begin="0s" dur="5s" from="10" to="50" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="360" y="10" rx="5" ry="47.0355" height="50" width="50" style="stroke:#006600; stroke-width: 3; fill: #00ff00">
+
+        <animate attributeName="ry" begin="0s" dur="5s" from="10" to="50" repeatCount="indefinite"/>
+    </rect>
+
+    <path d="M10,100              l100,0              a1,1 0 0,1 100,50               a1,1 0 0,1 -100,-50 " style="stroke:#000000; stroke-width:2; fill:none;"/>
+
+
+    <rect x="-25" y="-15" rx="5" ry="5" height="30" width="50" style="stroke:#006600; stroke-width: 3; fill: #00ff00">
+
+        <animateMotion path="M10,100              l100,0              a1,1 0 0,1 100,50              a1,1 0 0,1 -100,-50" begin="0s" dur="5s" rotate="auto" repeatCount="indefinite"/>
+    </rect>
+
+
+
+    <a xlink:href="/31.SVG动画.html" target="_top">
+        <text x="20" y="200" style="stroke: #333333; font-family:Arial; font-size:14;">Animation</text>
+    </a>
+
+
+</svg>

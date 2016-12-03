@@ -1,0 +1,818 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13.SVG polyline元素 · SVG教程（中文翻译版）</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="brucewar <wjl891014@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14.SVG-polygon元素.html" />
+    
+    
+    <link rel="prev" href="12.SVG-line元素.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://brucewar.me" target="_blank" class="custom-link">博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://brucewar.me/donate/" target="_blank" class="custom-link">打赏</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://github.com/brucewar/svg-tutorial" target="_blank" class="custom-link">View on GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.SVG教程.html">
+            
+                <a href="1.SVG教程.html">
+            
+                    
+                    1.SVG教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.SVG示例.html">
+            
+                <a href="2.SVG示例.html">
+            
+                    
+                    2.SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.一个简单的SVG示例.html">
+            
+                <a href="3.一个简单的SVG示例.html">
+            
+                    
+                    3.一个简单的SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.在Web浏览器中显示SVG.html">
+            
+                <a href="4.在Web浏览器中显示SVG.html">
+            
+                    
+                    4.在Web浏览器中显示SVG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.SVG图标.html">
+            
+                <a href="5.SVG图标.html">
+            
+                    
+                    5.SVG图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.SVG坐标系.html">
+            
+                <a href="6.SVG坐标系.html">
+            
+                    
+                    6.SVG坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.SVG-svg元素.html">
+            
+                <a href="7.SVG-svg元素.html">
+            
+                    
+                    7.SVG svg元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8.SVG-g元素.html">
+            
+                <a href="8.SVG-g元素.html">
+            
+                    
+                    8.SVG g元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9.SVG-rect元素.html">
+            
+                <a href="9.SVG-rect元素.html">
+            
+                    
+                    9.SVG rect元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.SVG-circle元素.html">
+            
+                <a href="10.SVG-circle元素.html">
+            
+                    
+                    10.SVG circle元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.SVG-ellipse元素.html">
+            
+                <a href="11.SVG-ellipse元素.html">
+            
+                    
+                    11.SVG ellipse元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12.SVG-line元素.html">
+            
+                <a href="12.SVG-line元素.html">
+            
+                    
+                    12.SVG line元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="13.SVG-polyline元素.html">
+            
+                <a href="13.SVG-polyline元素.html">
+            
+                    
+                    13.SVG polyline元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.SVG-polygon元素.html">
+            
+                <a href="14.SVG-polygon元素.html">
+            
+                    
+                    14.SVG polygon元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.SVG-path元素.html">
+            
+                <a href="15.SVG-path元素.html">
+            
+                    
+                    15.SVG path元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16.SVG-marker元素.html">
+            
+                <a href="16.SVG-marker元素.html">
+            
+                    
+                    16.SVG marker元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17.SVG-text元素.html">
+            
+                <a href="17.SVG-text元素.html">
+            
+                    
+                    17.SVG text元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18.SVG-tspan元素.html">
+            
+                <a href="18.SVG-tspan元素.html">
+            
+                    
+                    18.SVG tspan元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="19.SVG-tref元素.html">
+            
+                <a href="19.SVG-tref元素.html">
+            
+                    
+                    19.SVG tref元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="20.SVG-textpath元素.html">
+            
+                <a href="20.SVG-textpath元素.html">
+            
+                    
+                    20.SVG textpath元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="21.SVG-switch元素.html">
+            
+                <a href="21.SVG-switch元素.html">
+            
+                    
+                    21.SVG switch元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="22.SVG-image元素.html">
+            
+                <a href="22.SVG-image元素.html">
+            
+                    
+                    22.SVG image元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="23.SVG-a元素.html">
+            
+                <a href="23.SVG-a元素.html">
+            
+                    
+                    23.SVG a元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="24.SVG-defs元素.html">
+            
+                <a href="24.SVG-defs元素.html">
+            
+                    
+                    24.SVG defs元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="25.SVG-symbol元素.html">
+            
+                <a href="25.SVG-symbol元素.html">
+            
+                    
+                    25.SVG symbol元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="26.SVG-use元素.html">
+            
+                <a href="26.SVG-use元素.html">
+            
+                    
+                    26.SVG use元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="27.SVG和CSS-级联样式表.html">
+            
+                <a href="27.SVG和CSS-级联样式表.html">
+            
+                    
+                    27.SVG和CSS-级联样式表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="28.SVG轮廓.html">
+            
+                <a href="28.SVG轮廓.html">
+            
+                    
+                    28.SVG轮廓
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="29.SVG填充.html">
+            
+                <a href="29.SVG填充.html">
+            
+                    
+                    29.SVG填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="30.SVG视口和视图框.html">
+            
+                <a href="30.SVG视口和视图框.html">
+            
+                    
+                    30.SVG视口和视图框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="31.SVG动画.html">
+            
+                <a href="31.SVG动画.html">
+            
+                    
+                    31.SVG动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="32.SVG脚本.html">
+            
+                <a href="32.SVG脚本.html">
+            
+                    
+                    32.SVG脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="33.SVG变换.html">
+            
+                <a href="33.SVG变换.html">
+            
+                    
+                    33.SVG变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="34.SVG渐变.html">
+            
+                <a href="34.SVG渐变.html">
+            
+                    
+                    34.SVG渐变
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="35.SVG填充图案.html">
+            
+                <a href="35.SVG填充图案.html">
+            
+                    
+                    35.SVG填充图案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="36.SVG剪裁路径.html">
+            
+                <a href="36.SVG剪裁路径.html">
+            
+                    
+                    36.SVG剪裁路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="37.SVG遮罩.html">
+            
+                <a href="37.SVG遮罩.html">
+            
+                    
+                    37.SVG遮罩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="38.SVG滤镜.html">
+            
+                <a href="38.SVG滤镜.html">
+            
+                    
+                    38.SVG滤镜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13.SVG polyline元素</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="svg-polyline&#x5143;&#x7D20;">SVG polyline&#x5143;&#x7D20;</h1>
+<hr>
+<blockquote>
+<ul>
+<li><a href="#svg-polyline&#x89C6;&#x9891;&#x6559;&#x7A0B;">SVG Polyline&#x89C6;&#x9891;&#x6559;&#x7A0B;</a></li>
+<li><a href="#svg-polyline&#x793A;&#x4F8B;">SVG Polyline&#x793A;&#x4F8B;</a></li>
+</ul>
+</blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&lt;polyline&gt;</code>&#x5143;&#x7D20;&#x7ED8;&#x5236;&#x591A;&#x6761;&#x8FDE;&#x63A5;&#x7EBF;&#xFF08;poly = multiple&#xFF09;&#x3002;</p>
+<h2 id="svg-polyline&#x89C6;&#x9891;&#x6559;&#x7A0B;">SVG Polyline&#x89C6;&#x9891;&#x6559;&#x7A0B;</h2>
+<p>&#x672C;&#x8282;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/6sGpaZih3Yc?list=PLL8woMHwr36F2tCFnWTbVBQAGQ6nTcXOO" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="svg-polyline&#x793A;&#x4F8B;">SVG Polyline&#x793A;&#x4F8B;</h2>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;SVG&#x6298;&#x7EBF;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+    <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;0,0  30,0  15,30&quot;</span>
+        <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke:#006600;&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x56FE;&#x7247;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg width="320" height="70">
+
+    <polyline points="0,2  50,2  25,52" style="stroke:#006600;"/>
+</svg>
+
+<p>&#x591A;&#x6761;&#x7EBF;&#x662F;&#x7531;&#x591A;&#x4E2A;&#x70B9;&#x6807;&#x8BC6;&#x3002;&#x6BCF;&#x4E2A;&#x70B9;&#x90FD;&#x662F;<code>points</code>&#x5C5E;&#x6027;&#x4E2D;&#x7684;x,y&#x503C;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x901A;&#x8FC7;&#x4E09;&#x4E2A;&#x70B9;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x3002;</p>
+<p>&#x8FD9;&#x4E09;&#x4E2A;&#x70B9;&#x901A;&#x8FC7;&#x76F4;&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x88AB;&#x586B;&#x5145;&#x3002;&#x9ED8;&#x8BA4;&#x7684;&#x586B;&#x5145;&#x8272;&#x4E3A;&#x9ED1;&#x8272;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x586B;&#x5145;&#x8272;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+    <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;10,2  60,2  35,52&quot;</span>
+        <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke:#006600; stroke-width: 2;
+               fill: #33cc33;&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<svg width="320" height="70">
+    <polyline points="10,2  60,2  35,52" style="stroke:#006600; stroke-width: 2; fill: #33cc33;"/>
+</svg>
+
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x4E09;&#x89D2;&#x5F62;&#x4E2D;&#x53EA;&#x6709;&#x4E24;&#x6761;&#x8FB9;&#x6709;&#x8FB9;&#x6846;&#x8272;&#xFF08;&#x6DF1;&#x7EFF;&#x8272;&#xFF09;&#x3002;&#x56E0;&#x4E3A;&#x53EA;&#x6709;&#x5217;&#x51FA;&#x7684;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x7EBF;&#x88AB;&#x7ED8;&#x5236;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x7ED8;&#x5236;&#x56DE;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x70B9;&#x7684;&#x7EBF;&#x3002;&#x4E3A;&#x4E86;&#x7ED8;&#x5236;&#x8FD9;&#x6761;&#x7EBF;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x7B2C;&#x4E00;&#x4E2A;&#x70B9;&#x518D;&#x52A0;&#x5230;<code>points</code>&#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+    <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;10,2  60,2  35,52  10,2&quot;</span>
+        <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke:#006600; fill: #33cc33;&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<svg width="320" height="70">
+
+    <polyline points="10,2  60,2  35,52  10,2" style="stroke:#006600; stroke-width: 2; fill: #33cc33;"/>
+</svg>
+
+<p><code>style</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E86;&#x8FB9;&#x6846;&#x7684;&#x989C;&#x8272;&#x4EE5;&#x53CA;&#x586B;&#x5145;&#x8272;&#x3002;&#x540E;&#x9762;&#x4F1A;&#x5BF9;&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x4F5C;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12.SVG-line元素.html" class="navigation navigation-prev " aria-label="Previous page: 12.SVG line元素">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14.SVG-polygon元素.html" class="navigation navigation-next " aria-label="Next page: 14.SVG polygon元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13.SVG polyline元素","level":"1.14","depth":1,"next":{"title":"14.SVG polygon元素","level":"1.15","depth":1,"path":"14.SVG-polygon元素.md","ref":"14.SVG-polygon元素.md","articles":[]},"previous":{"title":"12.SVG line元素","level":"1.13","depth":1,"path":"12.SVG-line元素.md","ref":"12.SVG-line元素.md","articles":[]},"dir":"ltr"},"config":{"plugins":["duoshuo","github","ga","baidu","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/brucewar"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"brucewar","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-87259783-2"},"baidu":{"token":"80f89a3fe34a9f8e22c53f85908e2d6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"brucewar <wjl891014@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SVG教程（中文翻译版）","links":{"sidebar":{"博客":"http://brucewar.me","打赏":"http://brucewar.me/donate/","View on GitHub":"https://github.com/brucewar/svg-tutorial"}},"gitbook":"*","description":"SVG教程中文翻译版，也是本人第一次翻译英文教程。"},"file":{"path":"13.SVG-polyline元素.md","mtime":"2016-11-19T10:47:27.590Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-03T13:37:22.555Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-duoshuo/duoshuo.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

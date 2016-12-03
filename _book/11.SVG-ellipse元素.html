@@ -1,0 +1,903 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.SVG ellipse元素 · SVG教程（中文翻译版）</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="brucewar <wjl891014@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12.SVG-line元素.html" />
+    
+    
+    <link rel="prev" href="10.SVG-circle元素.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://brucewar.me" target="_blank" class="custom-link">博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://brucewar.me/donate/" target="_blank" class="custom-link">打赏</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://github.com/brucewar/svg-tutorial" target="_blank" class="custom-link">View on GitHub</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.SVG教程.html">
+            
+                <a href="1.SVG教程.html">
+            
+                    
+                    1.SVG教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.SVG示例.html">
+            
+                <a href="2.SVG示例.html">
+            
+                    
+                    2.SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.一个简单的SVG示例.html">
+            
+                <a href="3.一个简单的SVG示例.html">
+            
+                    
+                    3.一个简单的SVG示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.在Web浏览器中显示SVG.html">
+            
+                <a href="4.在Web浏览器中显示SVG.html">
+            
+                    
+                    4.在Web浏览器中显示SVG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.SVG图标.html">
+            
+                <a href="5.SVG图标.html">
+            
+                    
+                    5.SVG图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.SVG坐标系.html">
+            
+                <a href="6.SVG坐标系.html">
+            
+                    
+                    6.SVG坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.SVG-svg元素.html">
+            
+                <a href="7.SVG-svg元素.html">
+            
+                    
+                    7.SVG svg元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8.SVG-g元素.html">
+            
+                <a href="8.SVG-g元素.html">
+            
+                    
+                    8.SVG g元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9.SVG-rect元素.html">
+            
+                <a href="9.SVG-rect元素.html">
+            
+                    
+                    9.SVG rect元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.SVG-circle元素.html">
+            
+                <a href="10.SVG-circle元素.html">
+            
+                    
+                    10.SVG circle元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="11.SVG-ellipse元素.html">
+            
+                <a href="11.SVG-ellipse元素.html">
+            
+                    
+                    11.SVG ellipse元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12.SVG-line元素.html">
+            
+                <a href="12.SVG-line元素.html">
+            
+                    
+                    12.SVG line元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.SVG-polyline元素.html">
+            
+                <a href="13.SVG-polyline元素.html">
+            
+                    
+                    13.SVG polyline元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.SVG-polygon元素.html">
+            
+                <a href="14.SVG-polygon元素.html">
+            
+                    
+                    14.SVG polygon元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.SVG-path元素.html">
+            
+                <a href="15.SVG-path元素.html">
+            
+                    
+                    15.SVG path元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16.SVG-marker元素.html">
+            
+                <a href="16.SVG-marker元素.html">
+            
+                    
+                    16.SVG marker元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17.SVG-text元素.html">
+            
+                <a href="17.SVG-text元素.html">
+            
+                    
+                    17.SVG text元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18.SVG-tspan元素.html">
+            
+                <a href="18.SVG-tspan元素.html">
+            
+                    
+                    18.SVG tspan元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="19.SVG-tref元素.html">
+            
+                <a href="19.SVG-tref元素.html">
+            
+                    
+                    19.SVG tref元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="20.SVG-textpath元素.html">
+            
+                <a href="20.SVG-textpath元素.html">
+            
+                    
+                    20.SVG textpath元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="21.SVG-switch元素.html">
+            
+                <a href="21.SVG-switch元素.html">
+            
+                    
+                    21.SVG switch元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="22.SVG-image元素.html">
+            
+                <a href="22.SVG-image元素.html">
+            
+                    
+                    22.SVG image元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="23.SVG-a元素.html">
+            
+                <a href="23.SVG-a元素.html">
+            
+                    
+                    23.SVG a元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="24.SVG-defs元素.html">
+            
+                <a href="24.SVG-defs元素.html">
+            
+                    
+                    24.SVG defs元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="25.SVG-symbol元素.html">
+            
+                <a href="25.SVG-symbol元素.html">
+            
+                    
+                    25.SVG symbol元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="26.SVG-use元素.html">
+            
+                <a href="26.SVG-use元素.html">
+            
+                    
+                    26.SVG use元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="27.SVG和CSS-级联样式表.html">
+            
+                <a href="27.SVG和CSS-级联样式表.html">
+            
+                    
+                    27.SVG和CSS-级联样式表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="28.SVG轮廓.html">
+            
+                <a href="28.SVG轮廓.html">
+            
+                    
+                    28.SVG轮廓
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="29.SVG填充.html">
+            
+                <a href="29.SVG填充.html">
+            
+                    
+                    29.SVG填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="30.SVG视口和视图框.html">
+            
+                <a href="30.SVG视口和视图框.html">
+            
+                    
+                    30.SVG视口和视图框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="31.SVG动画.html">
+            
+                <a href="31.SVG动画.html">
+            
+                    
+                    31.SVG动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="32.SVG脚本.html">
+            
+                <a href="32.SVG脚本.html">
+            
+                    
+                    32.SVG脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="33.SVG变换.html">
+            
+                <a href="33.SVG变换.html">
+            
+                    
+                    33.SVG变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="34.SVG渐变.html">
+            
+                <a href="34.SVG渐变.html">
+            
+                    
+                    34.SVG渐变
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="35.SVG填充图案.html">
+            
+                <a href="35.SVG填充图案.html">
+            
+                    
+                    35.SVG填充图案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="36.SVG剪裁路径.html">
+            
+                <a href="36.SVG剪裁路径.html">
+            
+                    
+                    36.SVG剪裁路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="37.SVG遮罩.html">
+            
+                <a href="37.SVG遮罩.html">
+            
+                    
+                    37.SVG遮罩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="38.SVG滤镜.html">
+            
+                <a href="38.SVG滤镜.html">
+            
+                    
+                    38.SVG滤镜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >11.SVG ellipse元素</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="svg-ellipse&#x5143;&#x7D20;">SVG ellipse&#x5143;&#x7D20;</h1>
+<hr>
+<blockquote>
+<ul>
+<li><a href="#&#x89C6;&#x9891;&#x7248;">&#x89C6;&#x9891;&#x7248;</a></li>
+<li><a href="#svg-ellipse&#x793A;&#x4F8B;">SVG ellipse&#x793A;&#x4F8B;</a></li>
+<li><a href="#stroke-width">stroke-width</a></li>
+<li><a href="#stroke-dasharray">stroke-dasharray</a></li>
+<li><a href="#fill">fill</a></li>
+<li><a href="#fill-opacity">fill-opacity</a></li>
+</ul>
+</blockquote>
+<p>SVG<code>&lt;ellipse&gt;</code>&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7ED8;&#x5236;&#x692D;&#x5706;&#x3002;&#x692D;&#x5706;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6709;&#x4E0D;&#x540C;&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#x7684;&#x5706;&#xFF0C;&#x5373;&#x5176;&#x5728;x&#x548C;y&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x534A;&#x5F84;&#x4E0D;&#x540C;&#x3002;</p>
+<h2 id="&#x89C6;&#x9891;&#x7248;">&#x89C6;&#x9891;&#x7248;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E2D;&#x610F;&#x89C6;&#x9891;&#x7248;&#x6559;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x89C6;&#x9891;&#xFF1A;</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/H6jlhLtdgqg?list=PLL8woMHwr36F2tCFnWTbVBQAGQ6nTcXOO" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="svg-ellipse&#x793A;&#x4F8B;">SVG ellipse&#x793A;&#x4F8B;</h2>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;SVG ellipse&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>
+    <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">&quot;http://www.w3.org/1999/xlink&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;15&quot;</span>
+           <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke:#006600; fill:#00cc00&quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p>&#x56FE;&#x7247;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg width="320" height="70">
+    <ellipse cx="40" cy="40" rx="30" ry="15" style="stroke:#006600; fill:#00cc00"/>
+</svg>
+
+<p>&#x5982;&#x5706;&#x5F62;&#xFF0C;&#x692D;&#x5706;&#x7684;&#x5706;&#x5FC3;&#x5728;<code>cx</code>&#xFF0C;<code>cy</code>&#x3002;&#x4F46;&#x662F;&#x5176;&#x5728;x&#x548C;y&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x534A;&#x5F84;&#x6709;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#xFF1A;<code>rx</code>&#x548C;<code>ry</code>&#x5C5E;&#x6027;&#x3002;&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;<code>rx</code>&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5927;&#x4E8E;<code>ry</code>&#x5C5E;&#x6027;&#xFF0C;&#x4F7F;&#x692D;&#x5706;&#x7684;&#x5BBD;&#x5927;&#x4E8E;&#x9AD8;&#x3002;&#x5982;&#x679C;&#x5C06;<code>rx</code>&#x548C;<code>ry</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x6837;&#x7684;&#x503C;&#xFF0C;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;&#x5706;&#x5F62;&#x3002;</p>
+<h2 id="stroke-width">stroke-width</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="28.SVG&#x8F6E;&#x5ED3;.html#stroke-width">stroke-width</a>&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x692D;&#x5706;&#x7684;&#x8FB9;&#x6846;&#x5BBD;&#x5EA6;&#xFF0C;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #ff0000;
+               stroke-width: 5;
+               fill: none;
+        &quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg height="100">
+    <ellipse cx="50" cy="50" rx="40" ry="30" style="stroke: #ff0000;
+                   stroke-width: 5;
+                   fill: none;
+            "/>
+</svg>
+
+<h2 id="stroke-dasharray">stroke-dasharray</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="28.SVG&#x8F6E;&#x5ED3;.html#stroke-dasharray-stroke-dashoffset">stroke-dasharray</a>&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x5C06;&#x692D;&#x5706;&#x8FB9;&#x6846;&#x53D8;&#x6210;&#x865A;&#x7EBF;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #ff0000;
+               stroke-width: 5;
+               stroke-dasharray: 10 5;
+               fill: none;
+        &quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x6B64;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5C06;&#x865A;&#x7EBF;&#x7684;&#x5BBD;&#x5EA6;&#x8BBE;&#x7F6E;&#x4E3A;10&#xFF0C;&#x5E76;&#x5C06;&#x865A;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x7A7A;&#x95F4;&#xFF08;&#x865A;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x7A7A;&#x683C;&#xFF09;&#x8BBE;&#x7F6E;&#x4E3A;5&#x3002;&#x6E32;&#x67D3;&#x540E;&#x7684;&#x6837;&#x5B50;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg height="100">
+    <ellipse cx="50" cy="50" rx="40" ry="30" style="stroke: #ff0000;
+                   stroke-width: 5;
+                   stroke-dasharray: 10 5;
+                   fill: none;
+            "/>
+</svg>
+
+<h2 id="stroke-opacity">stroke-opacity</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="28.SVG&#x8F6E;&#x5ED3;.html#stroke-opacity">stroke-opacity</a>&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x5C06;SVG&#x692D;&#x5706;&#x7684;&#x8FB9;&#x6846;&#x534A;&#x900F;&#x660E;&#x5316;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #ff0000;
+               stroke-width: 5;
+               fill: none;
+        &quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;60&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;60&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #0000ff;
+               stroke-width: 5;
+               stroke-opacity: 0.5;
+               fill: none;
+        &quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E9B;SVG&#x692D;&#x5706;&#x6E32;&#x67D3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg height="120">
+    <ellipse cx="50" cy="50" rx="40" ry="30" style="stroke: #ff0000;
+                   stroke-width: 5;
+                   fill: none;
+            "/>
+
+    <ellipse cx="60" cy="60" rx="40" ry="30" style="stroke: #0000ff;
+                   stroke-width: 5;
+                   stroke-opacity: 0.5;
+                   fill: none;
+            "/>
+</svg>
+
+<p>&#x6CE8;&#x610F;&#x770B;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF08;&#x84DD;&#x8272;&#xFF09;&#x692D;&#x5706;&#x662F;&#x5982;&#x4F55;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x5B83;&#x7684;&#x8FB9;&#x6846;&#x770B;&#x5230;&#x7EA2;&#x8272;&#x692D;&#x5706;&#x3002;</p>
+<h2 id="fill">fill</h2>
+<p><code>fill</code>&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x7528;&#x6765;&#x4E3A;&#x692D;&#x5706;&#x8BBE;&#x7F6E;&#x586B;&#x5145;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #ff0000;
+               stroke-width: 5;
+               fill: #ff6666;
+        &quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg height="120">
+    <ellipse cx="50" cy="50" rx="40" ry="30" style="stroke: #ff0000;
+                   stroke-width: 5;
+               fill: #ff6666;
+            "/>
+</svg>
+
+<h2 id="fill-opacity">fill-opacity</h2>
+<p><a href="29.SVG&#x586B;&#x5145;.html#fill-opacity">fill-opacity</a>&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x692D;&#x5706;&#x586B;&#x5145;&#x8272;&#x7684;&#x900F;&#x660E;&#x5EA6;&#xFF0C;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: #ff0000;
+               stroke-width: 5;
+               fill: none;
+        &quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ellipse</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;60&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;60&quot;</span> <span class="hljs-attr">rx</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">ry</span>=<span class="hljs-string">&quot;30&quot;</span>
+         <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;stroke: none;
+               fill: #0000ff;
+               fill-opacity: 0.5;
+        &quot;</span>/&gt;</span>
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<svg height="120">
+    <ellipse cx="50" cy="50" rx="40" ry="30" style="stroke: #ff0000;
+                   stroke-width: 5;
+                   fill: none;
+            "/>
+
+    <ellipse cx="60" cy="60" rx="40" ry="30" style="stroke: none;
+                   fill: #0000ff;
+                   fill-opacity: 0.5;
+            "/>
+</svg>
+
+<p>&#x6CE8;&#x610F;&#x770B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF08;&#x84DD;&#x8272;&#xFF09;&#x692D;&#x5706;&#x662F;&#x534A;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x900F;&#x8FC7;&#x5B83;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x770B;&#x5230;&#x7EA2;&#x8272;&#x692D;&#x5706;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10.SVG-circle元素.html" class="navigation navigation-prev " aria-label="Previous page: 10.SVG circle元素">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12.SVG-line元素.html" class="navigation navigation-next " aria-label="Next page: 12.SVG line元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.SVG ellipse元素","level":"1.12","depth":1,"next":{"title":"12.SVG line元素","level":"1.13","depth":1,"path":"12.SVG-line元素.md","ref":"12.SVG-line元素.md","articles":[]},"previous":{"title":"10.SVG circle元素","level":"1.11","depth":1,"path":"10.SVG-circle元素.md","ref":"10.SVG-circle元素.md","articles":[]},"dir":"ltr"},"config":{"plugins":["duoshuo","github","ga","baidu","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/brucewar"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"brucewar","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-87259783-2"},"baidu":{"token":"80f89a3fe34a9f8e22c53f85908e2d6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"brucewar <wjl891014@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SVG教程（中文翻译版）","links":{"sidebar":{"博客":"http://brucewar.me","打赏":"http://brucewar.me/donate/","View on GitHub":"https://github.com/brucewar/svg-tutorial"}},"gitbook":"*","description":"SVG教程中文翻译版，也是本人第一次翻译英文教程。"},"file":{"path":"11.SVG-ellipse元素.md","mtime":"2016-12-03T09:21:25.053Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-03T13:37:22.555Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-duoshuo/duoshuo.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

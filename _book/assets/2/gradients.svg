@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<linearGradient id="myLinearGradient1" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad">
+			<stop offset="10%" stop-color="#00cc00" stop-opacity="1"/>
+			<stop offset="30%" stop-color="#006600" stop-opacity="1"/>
+
+			<stop offset="70%" stop-color="#cc0000" stop-opacity="1"/>
+			<stop offset="90%" stop-color="#000099" stop-opacity="1"/>
+
+		</linearGradient>
+
+			<linearGradient id="myLinearGradient2" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#00ee00" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+			</linearGradient>
+
+			<linearGradient id="myLinearGradient3" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#009000" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#004000" stop-opacity="1"/>
+			</linearGradient>
+
+			<linearGradient id="myLinearGradient4" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#00ee00" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#00ee00" stop-opacity="0"/>
+			</linearGradient>
+
+			<linearGradient id="myLinearGradient5" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#000000" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+			</linearGradient>
+
+
+			<radialGradient id="myRadialGradient1" fx="50%" fy="50%" r="10%" spreadMethod="reflect">
+				<stop offset="0%" stop-color="red" stop-opacity="1"/>
+				<stop offset="50%" stop-color="blue" stop-opacity="0.5"/>
+				<stop offset="100%" stop-color="green" stop-opacity="0"/>
+			</radialGradient>
+
+			<radialGradient id="myRadialGradient2" fx="50%" fy="50%" r="65%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#00ee00" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+			</radialGradient>
+
+			<radialGradient id="myRadialGradient3" fx="50%" fy="0%" r="65%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#00ee00" stop-opacity="1"/>
+				<stop offset="100%" stop-color="#006600" stop-opacity="1"/>
+			</radialGradient>
+
+
+	</defs>
+
+	<rect x="10" y="10" width="500" height="50" rx="10" ry="10" style="fill:url(#myLinearGradient1); stroke: #005000; stroke-width: 3;"/>
+
+	<rect x="10" y="70" width="50" height="100" rx="10" ry="10" style="fill:url(#myLinearGradient2); stroke: #005000; stroke-width: 3;"/>
+
+	<rect x="70" y="70" width="50" height="100" rx="10" ry="10" style="fill:none; stroke: url(#myLinearGradient3); stroke-width: 3;"/>
+
+	<rect x="130" y="70" width="50" height="100" rx="10" ry="10" style="fill:url(#myLinearGradient2); stroke: none;"/>
+
+	<rect x="190" y="70" width="100" height="100" rx="10" ry="10" style="fill:url(#myRadialGradient2); stroke: #005500; stroke-width: 3;"/>
+
+	<rect x="300" y="70" width="100" height="100" rx="10" ry="10" style="fill:url(#myRadialGradient3); stroke: #005500; stroke-width: 3;"/>
+
+	<rect x="410" y="70" width="100" height="100" rx="10" ry="10" style="fill:url(#myRadialGradient1); stroke: #005500; stroke-width: 3;"/>
+
+
+	<rect x="75" y="200" width="100" height="100" rx="10" ry="10" style="fill: #cc0000; stroke: none;"/>
+
+	<rect x="10" y="200" width="100" height="100" rx="10" ry="10" style="fill:url(#myLinearGradient4); stroke: none;"/>
+
+	<text x="195" y="260" style="stroke:url(#myLinearGradient5); fill: url(#myLinearGradient5); font-family:Arial; font-size: 24px;">Text with opacity gradient</text>
+
+
+	<a xlink:href="/34.SVG渐变.html" target="_top">
+		<text x="20" y="190" style="stroke: #000000; font-family: Arial; font-size: 15px;">Linear Gradients</text>
+	</a>
+
+	<a xlink:href="/34.SVG渐变.html" target="_top">
+			<text x="200" y="190" style="stroke: #000000; font-family: Arial; font-size: 15px;">Radial Gradients</text>
+	</a>
+
+	<a xlink:href="/34.SVG渐变.html" target="_top">
+			<text x="20" y="320" style="stroke: #000000; font-family: Arial; font-size: 15px;">Opacity Gradients</text>
+	</a>
+
+</svg>
