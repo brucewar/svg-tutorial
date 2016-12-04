@@ -13,7 +13,7 @@
 		"duoshuo",
 		"github",
 		"ga",
-		"baidu"
+		"ba"
 	],
 	"pluginsConfig": {
 		"duoshuo": {
@@ -26,7 +26,7 @@
 		"ga": {
 			"token": "UA-87259783-2"
 		},
-		"baidu": {
+		"ba": {
 			"token": "80f89a3fe34a9f8e22c53f85908e2d6"
 		}
 	}
