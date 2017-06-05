@@ -11,6 +11,7 @@
 	},
 	"plugins": [
 		"duoshuo",
+		"disqus",
 		"github",
 		"ga",
 		"ba"
@@ -19,6 +20,9 @@
 		"duoshuo": {
 			"short_name": "brucewar",
 			"theme": "default"
+		},
+		"disqus": {
+			"shortName": "brucewar"
 		},
 		"github": {
 			"url": "https://github.com/brucewar"
