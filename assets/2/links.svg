@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <a xlink:href="http://brucewar.me" target="_top">
-        <text x="20" y="50" style="stroke: #333333; font-family:Arial; font-size:20;">http://brucewar.me</text>
+    <a xlink:href="http://brucewar.cn" target="_top">
+        <text x="20" y="50" style="stroke: #333333; font-family:Arial; font-size:20;">http://brucewar.cn</text>
     </a>
 
     <text x="220" y="50" style="stroke: #333333; font-family:Arial; font-size:20;">Click Retangle:</text>
-    <a xlink:href="http://brucewar.me" target="_top">
+    <a xlink:href="http://brucewar.cn" target="_top">
         <rect x="220" y="70" width="100" height="100" style="stroke: #333333; font-family:Arial; font-size:20;"/>
     </a>
 
