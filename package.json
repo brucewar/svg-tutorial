@@ -2,9 +2,10 @@
   "name": "svg-tutorial",
   "version": "0.0.1",
   "description": "SVG教程中文翻译版",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx --yes http-server@14.1.1 . -p 3000 -c-1",
+    "test": "node --test tests/*.test.cjs"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,8 @@
   "bugs": {
     "url": "https://github.com/brucewar/svg-tutorial/issues"
   },
-  "homepage": "https://github.com/brucewar/svg-tutorial#readme",
+  "homepage": "https://brucewar.github.io/svg-tutorial/",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0",
-    "gitbook-plugin-baidu": "^0.1.0",
-    "gitbook-plugin-duoshuo": "https://registry.npmjs.org/gitbook-plugin-duoshuo/-/gitbook-plugin-duoshuo-1.6.3.tgz",
-    "gitbook-plugin-ga": "^1.0.1"
+    "playwright": "1.62.1"
   }
 }
