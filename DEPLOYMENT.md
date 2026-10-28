@@ -61,3 +61,13 @@ npm test
 测试会自动启动临时预览服务，检查第 36 章的实际图形、嵌套 SVG 和代码块。如果使用已安装的 Edge，可在 PowerShell 中设置 `$env:PLAYWRIGHT_CHANNEL = 'msedge'` 后运行 `npm test`，无需安装 Chromium。
 
 发布方式也可参考 [GitHub Pages 官方工作流说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
+
+## Google Analytics 4
+
+站点使用 `assets/analytics.js` 接入 GA4，衡量 ID 为 `G-B05S8PK6J6`。只有 `svg.brucewar.cn` 加载 Google tag，本地预览和测试域名不发送统计数据。Google 的统计脚本或请求被阻止时，教程仍可正常阅读。
+
+首次进入页面和切换章节后发送一次 `page_view`，章节内锚点跳转不重复计数。事件包含章节标题和上一页地址；为了让 GA4 按章节显示页面路径，会将 `/#/9.SVG-rect元素` 记录为虚拟路径 `/9.SVG-rect元素`，网站实际路由保持不变。
+
+**GA4 后台需关闭自动历史记录浏览量统计**：进入 **管理 → 数据流 → 本网站 → 增强型衡量（齿轮）→ 网页浏览量 → 显示高级设置**，关闭“根据浏览器历史记录事件进行网页更改”（Page changes based on browser history events）。代码已设置 `send_page_view: false`，但该设置本身不会关闭增强型衡量的历史事件；两者同时启用会导致重复统计。参见 [Google 官方说明](https://developers.google.com/analytics/devguides/collection/ga4/views?technology=websites)。
+
+发布后，在 GA4 的“实时”报告中访问首页并切换章节，检查对应页面标题；需要排查事件时可使用 Tag Assistant 或 DebugView。`npm test` 会验证首次访问、章节切换、返回、锚点去重和本地预览排除，并拦截 Google 请求，避免向正式数据流发送测试数据。
